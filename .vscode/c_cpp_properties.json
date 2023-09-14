@@ -4,7 +4,8 @@
         "name": "G++",
         "includePath": [
             "${workspaceFolder}/**",
-            "${workspaceFolder}/vendor/vk/include/**"
+            "${workspaceFolder}/vendor/vk/include/**",
+            "${workspaceFolder}/vendor/raylib/include/**"
         ],
         "windowsSdkVersion": "10.0.22000.0",
         "compilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe",
