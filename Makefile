@@ -12,11 +12,9 @@ endif
 CFLAGS = -fdiagnostics-color=always -std=c++17 -g -Wall
 
 # Include directories
-IDFLAGS  = -I "$(CURDIR)/vendor/vk/include"
 IDFLAGS += -I "$(CURDIR)/vendor/raylib/include"
 
 # Library directories
-LDFLAGS  = -L "$(CURDIR)/vendor/vk/lib"
 ifeq ($(OS),Windows_NT)
 	LDFLAGS += -L "$(CURDIR)/vendor/raylib/lib/win64"
 else
@@ -24,7 +22,6 @@ else
 endif
 
 # Libraries
-LDLIBS  = -l:vk.lib
 LDLIBS += -l:libraylib.a
 ifeq ($(OS),Windows_NT)
 	LDLIBS += -lopengl32
