@@ -4,21 +4,8 @@
 		{
 			"type": "cppbuild",
 			"label": "Build Windows",
-			"command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
-			"args": [
-				"-fdiagnostics-color=always",
-				"-std=c++17",
-				"-g",
-				"${file}",
-				"-Wall",
-				"-I \"${fileDirname}/vendor/vk/include\"",
-                "-L \"${fileDirname}/vendor/vk/lib\"", "-l:vk.lib",
-				"-I \"${fileDirname}/vendor/raylib/include\"",
-                "-L \"${fileDirname}/vendor/raylib/lib\"", "-l:libraylib.a",
-				"-lopengl32", "-lgdi32", "-lwinmm",
-				"-o",
-				"${fileDirname}/build/win64/${fileBasenameNoExtension}.exe"
-			],
+			"command": "make",
+			"args": [],
 			"options": {
 				"cwd": "${fileDirname}"
 			},
@@ -28,8 +15,7 @@
 			"group": {
 				"kind": "build",
 				"isDefault": true
-			},
-			"detail": "compiler: C:\\msys64\\ucrt64\\bin\\g++.exe"
+			}
 		}
 	]
 }
