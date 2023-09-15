@@ -22,8 +22,7 @@ int main() {
     int32_t windowWidth = WINDOW_WIDTH;
     int32_t windowHeight = WINDOW_HEIGHT;
 
-    while (!WindowShouldClose())
-    {
+    while (!WindowShouldClose()) {
         if(IsWindowResized()) {
             windowWidth = GetRenderWidth();
             windowHeight = GetRenderHeight();
